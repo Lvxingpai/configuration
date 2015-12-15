@@ -33,7 +33,8 @@ object Configuration {
   /**
    * Returns a default Configuration object.
    */
-  def load() = Configuration(ConfigFactory.defaultApplication())
+  // def load() = Configuration(ConfigFactory.defaultApplication())
+  def load() = Configuration(ConfigFactory.load())
 
   /**
    * Create a new Configuration from the data passed as a Map.
